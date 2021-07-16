@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useCallback } from 'react'
 import './appButton.css'
 

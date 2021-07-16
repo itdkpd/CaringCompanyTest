@@ -1,6 +1,9 @@
+#sideMenu {
+    z-index: 1;
+}
+
 #sideMenu .MuiDrawer-root .MuiPaper-root {
-    background-color: #121212;
-    opacity: 0.95;
+    background-color:#121212f3;
 }
 
 #sideMenu .MuiList-root .MuiListItemIcon-root {
@@ -23,7 +26,8 @@
 }
 
 @media (min-width: 600px) {
-    #sideMenu .makeStyles-drawerClose-9 {
-        width: 57px;
+    #sideMenu .makeStyles-drawerClose-9,
+    #sideMenu .makeStyles-drawerClose-2 {
+        width: 58px;
     }
 }

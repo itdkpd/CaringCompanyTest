@@ -16,12 +16,12 @@ body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    min-height: calc(100vh - 110px);
+    min-height: 100vh;
+    max-height: 100vh;
     min-width: 1228px;
     font-family: Calibri, Open Sans, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
     font-size: 11pt;
     line-height: 1.428571429;
-    color: #000;
     overflow: auto;
     width: 100%;
 }
@@ -449,7 +449,7 @@ body {
     padding: 0;
     grid-template-areas: 'header header header header header header'
                          'menu main main main main main';
-    grid-template-columns: 210px auto;
+    grid-template-columns: 57px auto;
     grid-template-rows: 48px auto;
     grid-gap: 1px;
     height: 100vh;
@@ -457,16 +457,12 @@ body {
 
 .main-container .header {
     grid-area: header;
-    /* background-image: url("../../images/ucpb_logo.jpg");
-    background-size: auto 60px;
-    background-repeat: no-repeat;
-    background-position-x: 37px;
-    background-position-y: center; */
     background-color: #fff;
     z-index: 2;
 }
 
 .main-container .menu {
+    z-index: 1;
     grid-area: menu;
     max-width: 210px;
     min-width: 210px;
@@ -475,12 +471,13 @@ body {
 
 .main-container .main {
     grid-area: main;
-    margin-top: 5px;
+    background: #121212;
+    color: #fff;
     margin-bottom: 0;
     overflow: auto;
 }
 
-.main-container .main::-webkit-scrollbar {
+/* .main-container .main::-webkit-scrollbar {
     width: 12px;
 }
 
@@ -491,12 +488,8 @@ body {
 
 .main-container .main::-webkit-scrollbar-thumb:hover {
     background-color: #888;
-}
+} */
 
 li {
     list-style-type: none;
-}
-
-.header .MuiTypography-body1 {
-    font-size: 14px;
 }

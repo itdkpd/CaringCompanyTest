@@ -9,15 +9,13 @@ import Collapse from '@material-ui/core/Collapse';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
-import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
 import ExpandMore from '@material-ui/icons/ExpandMore';
 import { Link as RouterLink } from 'react-router-dom';
 import AccountCircle from '@material-ui/icons/AccountCircle';
+import clsx from 'clsx';
 import Button from '../../components/appButton/appButton'
 import '../../assets/stylesheets/header/header.css'
-import clsx from 'clsx';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -67,6 +65,7 @@ export default function Header() {
     }, [])
 
     return (
+        <div className="header">
         <div className={classes.root}>
             <AppBar position="fixed"
                 className={clsx(classes.appBar, {
@@ -79,7 +78,7 @@ export default function Header() {
                 <Collapse component="li" in={true} timeout="auto" unmountOnExit>
                     <List disablePadding>
                         <ListItem button component={RouterLink} to="/">
-                            <ListItemText primary={'Sydney Clinic'} />
+                            <ListItemText primary='Sydney Clinic' />
                             <ExpandMore/>
                         </ListItem>
                     </List>
@@ -87,7 +86,7 @@ export default function Header() {
                 <Collapse component="li" className="dark" in={true} timeout="auto" unmountOnExit>
                     <List disablePadding>
                         <ListItem button component={RouterLink} to="/">
-                            <ListItemText primary={'5 tabs active'} />
+                            <ListItemText primary='5 tabs active' />
                             <ExpandMore/>
                         </ListItem>
                     </List>
@@ -96,16 +95,17 @@ export default function Header() {
                 <Button className={classes.marginLeft} appButton={{ color: 'dark', icon: 'search', iconOnly: true }} />
                 <span className={classes.flexGrow} />
                 <div className="header-end">
-                    <span className={'fas fa-clock'} />
+                    <span className='fas fa-clock' />
                     <span id="app-time" />
                     <span>|</span>
-                    <span className={'fas fa-sun'} />
-                    <span className={'fas fa-clipboard-list'} />
-                    <span className={'fas fa-bell'} />
+                    <span className='fas fa-sun' />
+                    <span className='fas fa-clipboard-list' />
+                    <span className='fas fa-bell' />
                 </div>
                 <AccountCircle />
             </Toolbar>
             </AppBar>
+        </div>
         </div>
     );
 }

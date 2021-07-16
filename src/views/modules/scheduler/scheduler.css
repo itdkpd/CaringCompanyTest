@@ -1,0 +1,54 @@
+.fc-theme-standard td, .fc-theme-standard th {
+    border-color: black;
+}
+
+.fc-theme-standard .fc-scrollgrid {
+    border-color: black;
+}
+
+.fc-scrollgrid-sync-inner{
+    font-size: 25px;
+    color: #c4c4c4;
+}
+
+a.fc-timegrid-event {
+    background-color: #1d1d1d;
+    border-color: black;
+}
+
+.fc-timegrid-event-harness-inset .fc-timegrid-event, .fc-timegrid-event.fc-event-mirror, .fc-timegrid-more-link {
+    box-shadow: none;
+}
+
+.fc-event-main-frame::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 4px;
+    background-color: #0dcfda;
+}
+
+.fc-event-title-container {
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.fc-timegrid-event .fc-event-time {
+    display: none;
+}
+
+.fc .fc-timegrid-slot {
+    height: 6em;
+}
+
+.fc-theme-standard .fc-popover {
+    background: #1d1d1d;
+}
+
+.fc .fc-scroller::-webkit-scrollbar {
+    display: none;
+    width: 0;
+}

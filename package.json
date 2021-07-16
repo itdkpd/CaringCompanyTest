@@ -46,6 +46,9 @@
     "zip-lib": "^0.7.2"
   },
   "dependencies": {
+    "@fullcalendar/daygrid": "^5.8.0",
+    "@fullcalendar/react": "^5.8.0",
+    "@fullcalendar/timegrid": "^5.8.0",
     "@material-ui/core": "^4.12.1",
     "@material-ui/icons": "^4.11.2",
     "clsx": "^1.1.1",
