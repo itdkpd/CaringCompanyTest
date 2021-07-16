@@ -1,0 +1,29 @@
+#sideMenu .MuiDrawer-root .MuiPaper-root {
+    background-color: #121212;
+    opacity: 0.95;
+}
+
+#sideMenu .MuiList-root .MuiListItemIcon-root {
+    color:#fff;
+}
+
+#sideMenu .MuiList-root .MuiButtonBase-root:hover {
+    background-color: #0dd0da1e;
+}
+
+#sideMenu .MuiList-root .MuiButtonBase-root:hover::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 4px;
+    background-color: #0dcfda;
+}
+
+@media (min-width: 600px) {
+    #sideMenu .makeStyles-drawerClose-9 {
+        width: 57px;
+    }
+}

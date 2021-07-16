@@ -1,0 +1,18 @@
+.dark .MuiButtonBase-root {
+    width: 168px;
+    height: 30px;
+    padding: 4px 7px 6px 6px;
+    opacity: 0.72;
+    color: #aaa;
+    background: #121212;
+}
+
+.dark .MuiButtonBase-root:hover {
+    color: #aaa;
+    background: #121212;
+}
+
+.header-end span {
+    margin-left: 10px;
+    margin-right: 10px;
+}

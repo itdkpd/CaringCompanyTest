@@ -1,0 +1,175 @@
+.btn.btn-outline-warning {
+    color: darkorange;
+    border-color: darkorange;
+}
+
+.btn.btn-outline-warning:hover {
+    color: #fff;
+    background-color: darkorange;
+}
+
+button.app-btn:focus {
+    outline: none;
+    outline-color: none;
+    outline-style: none;
+    box-shadow: 0 0 3px 2px #00aeef;
+    border-color: #00aeef;
+}
+
+button.app-btn.dark:focus {
+    outline: none;
+    outline-color: none;
+    outline-style: none;
+    box-shadow: 0 0 3px 2px #121212;
+    border-color: #121212;
+}
+
+button.app-btn {
+    cursor: pointer;
+    background-image: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 0;
+    font-size: 11pt;
+    line-height: 1.428571429;
+    min-height: 30px;
+    max-height: 30px;
+}
+
+button.app-btn.info {
+    background-color: #00aeef;
+}
+
+button.app-btn.success {
+    background-color: #28a745;
+}
+
+button.app-btn.danger {
+    background-color: #cc0000;
+}
+
+button.app-btn.warning {
+    background-color: #ff8c00;
+}
+
+button.app-btn.primary-btn {
+    background-color: #007bff;
+}
+
+button.app-btn.default-btn {
+    background-color: #fff;
+}
+
+button.app-btn.dark {
+    background-color:#121212;
+    opacity: 0.72;
+}
+
+button.app-btn.primary-btn[disabled] {
+    border-color: #c4c4c4;
+    background-color: #007bff70;
+    cursor: not-allowed;
+}
+
+button.app-btn.default-btn[disabled] {
+    border-color: #c4c4c4;
+    cursor: not-allowed;
+}
+
+button.app-btn.success[disabled] {
+    border-color: #c4c4c4;
+    background-color: #28a74570;
+    cursor: not-allowed;
+}
+
+button.app-btn.danger[disabled] {
+    border-color: #c4c4c4;
+    background-color: #cc000070;
+    cursor: not-allowed;
+}
+
+button.app-btn.warning[disabled] {
+    border-color: #c4c4c4;
+    background-color: #ff8c0070;
+    cursor: not-allowed;
+}
+
+button.app-btn.info[disabled] {
+    border-color: #c4c4c4;
+    background-color: #00aeef70;
+    cursor: not-allowed;
+}
+
+button.app-btn[disabled]:hover {
+    border-color: #c4c4c4;
+}
+
+button.app-btn:hover {
+    border-color: #00aeef;
+}
+
+button.app-btn.dark:hover {
+    border-color: #121212;
+}
+
+.app-btn-text {
+    display: table-cell;
+    min-width: 50px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 3px 0 0 3px;
+    padding: 0 5px;
+}
+
+button.app-btn.default-btn[disabled] .app-btn-text {
+    color: #c4c4c4;
+}
+
+.app-btn-text-full {
+    display: table-cell;
+    min-width: 50px;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 3px 0 0 3px;
+    padding: 0 5px;
+}
+
+.app-btn-icon-wrapper {
+    background-color: transparent;
+    display: table-cell;
+    min-width: 30px;
+    max-width: 30px;
+    vertical-align: middle;
+    padding: 0 1px;
+}
+
+.app-btn-icon-wrapper-full {
+    display: table-cell;
+    min-width: 30px;
+    max-width: 30px;
+    vertical-align: middle;
+    padding: 0 1px;
+    color: #fff;
+}
+
+.app-btn-icon-wrapper:hover {
+    border-color: #00aeef
+}
+
+.app-btn-icon-wrapper:focus {
+    box-shadow: 0 0 3px 2px #00aeef
+}
+
+button.app-btn.tableButton {
+    margin: 4px;
+}
+
+button.app-btn.tableButton[disabled] {
+    border-color: #c4c4c4;
+    cursor: not-allowed;
+}
+
+.hideButton {
+    display: none;
+}
