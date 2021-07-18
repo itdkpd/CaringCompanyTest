@@ -21,7 +21,7 @@ export default function Scheduler() {
           slotMinTime="09:00:00"
           dayHeaderFormat={{ weekday: 'long' }}
           headerToolbar={{
-              left: 'prev,next today',
+              left: '',
               center: 'timeGridWeek,dayGridMonth',
               right: ''
             }
